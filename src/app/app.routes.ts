@@ -6,6 +6,7 @@ import { signal } from '@angular/core';
 import { SignalEx } from './component/signal-ex/signal-ex';
 import { User } from './component/user/user';
 import { AttDirective } from './component/att-directive/att-directive';
+import { GetApi } from './component/get-api/get-api';
 
 export const routes: Routes = [
     {
@@ -25,11 +26,15 @@ export const routes: Routes = [
         component: SignalEx
     },
     {
-        path: "user",
+        path: "User",
         component: User
     },
     {
         path: "Attr-dir",
         component: AttDirective
+    },
+    {
+        path: "GetApi",
+        component:GetApi
     }
 ];
