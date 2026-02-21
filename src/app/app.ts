@@ -4,10 +4,11 @@ import { Admin } from './component/admin/admin';
 import { User } from './component/user/user';
 import { DataBinding } from './component/data-binding/data-binding';
 import { SignalEx } from './component/signal-ex/signal-ex';
+import { ControlFlow } from './component/control-flow/control-flow';
 
 @Component({
   selector: 'app-root',
-  imports: [SignalEx],
+  imports: [ControlFlow],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -1,0 +1,78 @@
+<table width=100%>
+    <tr>
+        <td>
+            @if(isParaVisible === true){
+            <p>This is a para</p>
+            }@else{
+            <h2>isParaVisible has false value</h2>
+            }
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button (click)="showPara()"> show P</button>
+        </td>
+        <td>
+            <button (click)="hidePara()"> Hide P</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @if(startMonth === 'feb'){
+            <span>february</span>
+            }@else if(startMonth === 'Apr'){
+            <span>April</span>
+            }@else {
+            <h5>wrong input</h5>
+            }
+        </td>
+        <td>
+            <input type="text" [(ngModel)]="startMonth">
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <ul>
+                @for (item of cityList; track $index) {
+                <li>{{item}}</li>
+                }
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <select name="" id="">
+                @for (item of cityList; track $index) {
+                    <option value="">{{item}}</option>
+                }
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <thead>
+            <th>Sr No</th>
+            <th>Name</th>
+            <th>City</th>
+        </thead>
+        <tbody>
+            @for (item of studentList; track $index) {
+                <tr>
+                    <td>{{$index + 1}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.city}}</td>
+                    <td>
+                        @if(item.active === false){
+                       <h6>Inactive</h6>
+                    }@else {
+                        <h6>Active</h6>
+                    }
+                    </td>
+                    
+                    
+                </tr>
+            }
+        </tbody>
+    </tr>
+</table>
