@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-control-flow',
-  imports: [Admin, FormsModule],
+  imports: [FormsModule],
   templateUrl: './control-flow.html',
   styleUrl: './control-flow.css',
 })
