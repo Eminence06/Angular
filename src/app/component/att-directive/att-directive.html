@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-3">
+        <div class="p-3" [ngClass]="div1ClassName()">
+            Div 1 choose class - {{div1ClassName()}}
+        </div>
+    </div>
+    <div class="col-3" [ngStyle]="{'background-color': istrue=== true?'blue':'red'}">
+        <div class="p-3">
+            Div 2 choose class - {{istrue}}
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3">
+        <button class="btn btn-success" (click)="classChange('bg-success')">Green</button>
+        <button class="btn btn-danger" (click)="classChange('bg-danger')">Red</button>
+    </div>
+
+    <div class="col-3">
+        <button class="btn btn-success" (click)="toggle()">Toggle BG Color</button>
+    </div>
+</div>
