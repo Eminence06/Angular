@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { Admin } from './component/admin/admin';
 import { User } from './component/user/user';
 import { DataBinding } from './component/data-binding/data-binding';
+import { SignalEx } from './component/signal-ex/signal-ex';
 
 @Component({
   selector: 'app-root',
-  imports: [Admin,User,DataBinding, RouterOutlet],
+  imports: [SignalEx],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
