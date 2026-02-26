@@ -30,9 +30,7 @@ export class GetApi implements OnInit {
   getTodoItems() {
     this.http.get("https://jsonplaceholder.typicode.com/todos").subscribe(
       (result: any) => {
-        // debugger;
         this.todoList = result;
-        debugger;
       }
     )
   }

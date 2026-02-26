@@ -35,6 +35,6 @@ export const routes: Routes = [
     },
     {
         path: "GetApi",
-        component:GetApi
+        component: GetApi
     }
 ];
